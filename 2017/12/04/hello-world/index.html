@@ -13,11 +13,13 @@
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://sioft.github.io/2017/12/04/hello-world/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-12-04T03:09:23.503Z">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 第一博客个">
+<meta property="og:image" content="https://raw.githubusercontent.com/kamidox/blogs/master/kamidox_icon.png">
+<meta property="og:updated_time" content="2017-12-06T07:27:05.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 第一博客个">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kamidox/blogs/master/kamidox_icon.png">
   
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -174,6 +176,52 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h1 id="第一博客"><a href="#第一博客" class="headerlink" title="第一博客"></a>第一博客</h1><h2 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h2><p>你好，这是我第一次写blog</p>
+<p><a href="https://sioft.github.io">siyunx的博客</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure></p>
+<p>*列表1</p>
+<ul>
+<li><strong>列表2</strong></li>
+<li>列表3</li>
+</ul>
+<ul>
+<li>列表1</li>
+<li>列表2</li>
+<li>列表3</li>
+</ul>
+<p>Apple<br>:   Pomaceous fruit of plants of the genus Malus in<br>    the family Rosaceae.</p>
+<p>Orange<br>:   The fruit of an evergreen tree of the genus Citrus.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, render_template</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">app.debug = APP_DEBUG</span><br><span class="line"></span><br><span class="line"><span class="comment">#homepage just for fun</span></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">home</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'index.html'</span>)</span><br></pre></td></tr></table></figure>
+<p>把鼠标停留在<strong>HTML</strong>和<strong>W3C</strong>上看会发生什么。</p>
+<p><em>[HTML]: Hyper Text Markup Language
+</em>[W3C]: World Wide Web Consortium</p>
+<p>Footnotes[^1] have a label[^@#$%] and the footnote’s content.</p>
+<p>[^1]: This is a footnote content.<br>[^@#$%]: A footnote on the label: “@#$%”.</p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<p>这是一个<a href="https://github.com/kamidox/blogs" target="_blank" rel="noopener">链接</a><br>这是另外一种<a href="https://pythonhosted.org/Markdown/extensions/index.html" target="_blank" rel="noopener">链接</a>的形式</p>
+<blockquote>
+<p>引用的文字内容<br>这是另外的引用内容</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/kamidox/blogs/master/kamidox_icon.png" alt="图片描述"></p>
+<p>[TOC]</p>
+<p>####hint类型的警告<br>!!! hint “subject of hint”<br>    Any number of other indented markdown elements.</p>
+<p>####note类型的警告<br>!!! note “subject of note”<br>    Any number of other indented markdown elements.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
