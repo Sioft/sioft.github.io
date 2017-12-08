@@ -1,11 +1,14 @@
-init: function () {
+function init() {
     var that = this;
     $.getJSON("/photo/data.json", function (data) {
-        that.render(that.page, data);
-        that.scroll(data);
+        render(that.page, data);
     });
 }
-render: function (page, data) {
+addLoadEvent(function() {
+    init();
+})
+
+function render(page, data) {
     var begin = (page - 1) * this.offset;
     var end = page * this.offset;
     if (begin >= data.length) return;
