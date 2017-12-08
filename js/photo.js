@@ -4,9 +4,7 @@ function init() {
         render(that.page, data);
     });
 }
-addLoadEvent(function() {
     init();
-})
 
 function render(page, data) {
     var begin = (page - 1) * this.offset;
