@@ -4,7 +4,7 @@ init: function () {
         that.render(that.page, data);
         that.scroll(data);
     });
-},
+}
 render: function (page, data) {
     var begin = (page - 1) * this.offset;
     var end = page * this.offset;
