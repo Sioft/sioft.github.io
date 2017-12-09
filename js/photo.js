@@ -15,7 +15,9 @@ function render(page, data) {
         li += '<li><div class="img-box">' + '<a class="img-bg" rel="example_group" href="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '"></a>' + '<img lazy-src="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '" />' + '</li>';
     }
     $(".img-box-ul").append(li);
-    $(".img-box-ul").lazyload();
+    jQuery(document).ready(function ($) {
+        $(".img-box-ul").lazyload();
+    });
     $("a[rel=example_group]").fancybox();
 }
 
