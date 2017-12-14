@@ -1,4 +1,5 @@
 function init() {
+    console.log("加载照片");
     var that = this;
     $.getJSON("/photo/data.json", function (data) {
         render(that.page, data);
@@ -14,6 +15,7 @@ function render(page, data) {
     for (var i = begin; i < end && i < data.length; i++) {
         li += '<li><div class="img-box">' + '<a class="img-bg" rel="example_group" href="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '"></a>' + '<img lazy-src="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '" />' + '</li>';
     }
+    console.log("li="+li);
     $(".img-box-ul").append(li);
     jQuery(function($) {
         $(".img-box-ul").lazyload();
