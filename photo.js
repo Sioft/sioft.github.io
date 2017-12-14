@@ -1,28 +1,3 @@
-// 样式
-import '../css/main.scss'
-// 上报
-import './report'
-// 图片查看器
-import Viewer from './viewer'
-// 分享
-import Share from './share'
-// 边缘
-import Aside from './aside'
-
-import {addLoadEvent} from './util'
-
-addLoadEvent(function() {
-	Share.init()
-	Viewer.init()
-	Aside.init()
-})
-
-if($(".instagram").length) {
-    require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
-        obj.init();
-    });
-}
-
 define([], function () {
         return {
             page: 1,
@@ -43,8 +18,8 @@ define([], function () {
                 var html, li = "";
                 for (var i = begin; i < end && i < data.length; i++) {
                     li += '<li><div class="img-box">' +
-                        '<a class="img-bg" rel="example_group" href="https://github.com/Sioft/Blog_backups/master/photos/' + data[i] + '?raw=true"></a>' +
-                        '<img lazy-src="https://github.com/Sioft/Blog_backups/master/photos/' + data[i] + '?raw=true" />' +
+                        '<a class="img-bg" rel="example_group" href="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '?raw=true"></a>' +
+                        '<img lazy-src="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '?raw=true" />' +
                         '</li>';
                 }
 
