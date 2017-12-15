@@ -15,7 +15,8 @@ function render(page, data) {
     console.log(end);
     if (begin >= data.length) return;
     var html, li = "";
-    for (var i = begin; i < end && i < data.length; i++) {
+    /*for (var i = begin; i < end && i < data.length; i++) {*/
+    for (var i = 0; i < data.length; i++) {
         li += '<li><div class="img-box">' + '<a class="img-bg" rel="example_group" href="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '"></a>' + '<img lazy-src="https://raw.githubusercontent.com/Sioft/Blog_backups/master/photos/' + data[i] + '" />' + '</li>';
     }
     console.log("li="+li);
