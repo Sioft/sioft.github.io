@@ -8,6 +8,7 @@ function init() {
     init();
 
 function render(page, data) {
+    console.log(data);
     var begin = (page - 1) * this.offset;
     var end = page * this.offset;
     if (begin >= data.length) return;
