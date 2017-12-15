@@ -10,7 +10,9 @@ function init() {
 function render(page, data) {
     console.log(data);
     var begin = (page - 1) * this.offset;
+    console.log(begin);
     var end = page * this.offset;
+    console.log(end);
     if (begin >= data.length) return;
     var html, li = "";
     for (var i = begin; i < end && i < data.length; i++) {
